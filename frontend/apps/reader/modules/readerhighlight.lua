@@ -33,8 +33,8 @@ function ReaderHighlight:initGesListener()
             GestureRange:new{
                 ges = "hold",
                 range = Geom:new{
-                    x = 0, y = 0,
-                    w = Screen:getWidth(),
+                    x = Screen:getWidth()*1/8, y = 0,
+                    w = Screen:getWidth() - (Screen:getWidth()*1/4),
                     h = Screen:getHeight()
                 }
             }
@@ -43,8 +43,8 @@ function ReaderHighlight:initGesListener()
             GestureRange:new{
                 ges = "hold_release",
                 range = Geom:new{
-                    x = 0, y = 0,
-                    w = Screen:getWidth(),
+                    x = Screen:getWidth()*1/8, y = 0,
+                    w = Screen:getWidth() - (Screen:getWidth()*1/4),
                     h = Screen:getHeight()
                 }
             }
